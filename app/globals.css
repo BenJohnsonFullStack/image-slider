@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 10% 20%;
+}
+
+.item {
+  min-height: 22.5rem;
+  min-width: 15rem;
+  padding: 40px 20px;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  box-shadow: 3px 3px 3px gray;
+  pointer-events: none;
+}
+
+.inner-carousel {
+  display: flex;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+  width: min(100% - 2em, 60rem);
+  margin: 0 auto;
+}
